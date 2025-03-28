@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Tech - Carrossel com Miniaturas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Control Tech</h1>
+            <p>Organização Inteligente para Salas Elétricas</p>
+        </div>
+    </header>
+
+    <!-- Carrossel Principal -->
+    <section class="carousel-section">
+        <div class="container">
+            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="compressor.html">
+                            <img src="img/compressor.jfif" class="d-block w-100" alt="Ferramentas">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=2">
+                            <img src="img/motor de portao.jfif" class="d-block w-100" alt="Disjuntores">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=3">
+                            <img src="img/Peças.jfif" class="d-block w-100" alt="Cabos">
+                        </a>
+                    </div>
+                </div>
+                <!-- Controles de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Miniaturas -->
+    <section class="miniaturas-section">
+        <div class="container">
+            <div id="carouselMiniaturas" class="carousel slide" data-bs-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="miniaturas">
+                            <img src="img/compressor.jfif" class="d-block" alt="Ferramentas" data-bs-target="#carouselPrincipal" data-bs-slide-to="0">
+                            <img src="img/motor de portao.jfif" class="d-block" alt="Disjuntores" data-bs-target="#carouselPrincipal" data-bs-slide-to="1">
+                            <img src="img/Peças.jfif" class="d-block" alt="Cabos" data-bs-target="#carouselPrincipal" data-bs-slide-to="2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMiniaturas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMiniaturas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sobre Nós -->
+                <div class="footer-section about">
+                    <h3>Sobre Nós</h3>
+                    <p>
+                        A <strong>Control Tech</strong> é especializada em soluções tecnológicas para a organização e gestão de salas elétricas. 
+                        Nosso software permite o controle eficiente de peças e componentes, garantindo produtividade e segurança.
+                    </p>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="footer-section links">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer-section contact">
+                    <h3>Contato</h3>
+                    <p>Email: contato@controltech.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+                </div>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 Control Tech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
